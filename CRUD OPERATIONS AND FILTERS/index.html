@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]-->
+    <title>INFOSYS </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="MobileOptimized" content="width" />
+	<meta name="description" content="single page application with CRUD operations along with Sort and Search Filters in angular JS..." />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="keywords" content="CRUD operations in angularjs,CRUD operations, Filters, Sort filter, orderby filter, searchbox, SPA with ngroute " />
+	<meta name="generator" content="Kanchan Soni" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+	<body ng-app="bankApp" ng-controller="balanceController">
+   
+   		 <div class="container" id="container">
+    			<div class="row">
+				    <!-- Header section -->
+				    <div ng-include="'views/header.html'"></div>
+
+				    <!-- Left Navigation -->
+				    <div ng-include="'views/navigation.html'"></div>
+				  	
+				  	<!-- View Section for SPA -->
+				  	 <ng-view>
+					 </ng-view>
+
+					<div ng-include="'views/footer.html'"></div>
+		  </div>     <!--  Main Container End  -->     
+
+
+
+
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+		  <script src="js/controller.js"></script>
+		  
+	</body>
+
+</html>
